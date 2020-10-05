@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/tinder.css">
+    
+    
+</head>
+<body>
+    <header>
+
+        <!-- blocked the button and loading class is hidden  -->
+
+        <!-- <img class="logo" src="bot.png" alt="logo"> -->
+        
+            <img class="logo" src="/images/bot1.png" alt="">
+            <h2 class="siteName">BotsLand </h2>
+ 
+      
+            
+ 
+           
+            <nav class="navbar">
+                <a href="#"  class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="nav__links">
+                    <ul>
+                    <li> <a href="/">Instagram</a></li>
+                    <li> <a href="/facebook">Facebook</a></li>
+                    <li> <a href="/twitter">Twitter</a></li>
+                    <li> <a href="/tinder">Tnder</a></li>
+                    <!-- <li class ="aboutbutton"><a href="">About</a></li>  -->
+                    <li>
+                        <a href="/about" class="cta"><button class="aboutbutton">About</button></a>
+                    </li>
+                  
+    
+                </ul>
+                </div>
+                
+            </nav>
+      
+    </header>
+
+    <div class="actions">
+        
+        <div class="flexbox-container" >
+            
+            <div class="flexbox-item flexbox-item-1 blur" id="FollowFlexbox">
+                <div class="section1">
+                    <div class="header">
+                        <h1>Go Swipe Tinder</h1>
+                    </div>
+                        <% if ( ( typeof(error) != 'undefined')){ %>
+                            <h2 class="errorh2 works"  id="h2<%=error%>"></h2>
+                        <%}else{ %>
+                            <h2 class="errorh2 works"  id="h22"></h2>
+                       <% } %>
+                       
+                       
+                        
+                        
+                    <form method="POST" action="/goFollow" class="form" id="form">
+                    <div class="form-control">
+                        <label >Tinder Username</label>
+                        <input type="text" placeholder="Username" id="username" name="usernameinput">
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <div class="form-control">
+                        <label >Tinder Password</label>
+                        <input type="password" placeholder="password" id="password" name="passwordinput">
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <div class="form-control">
+                        <label >Keywords for search and go follow</label>
+                        
+                        <input type="text" placeholder="keywords" id="keywords" name="keywordsinput">
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <div class="form-control">
+                        <label >peole to follow (&lt200recomanded) </label>
+                        <input type="text" placeholder="people count" id="people" name="peopleinput">
+                        <i></i>
+                        <i></i>
+                    </div>
+                    
+                    <button disabled>GO FOLLOW</button>
+                    </form>
+                </div>
+                    
+                <div class="loadersection" >
+                    <div class="loader">
+                        
+                    </div>
+                    <h1 class="loaderh1">COMING SOON</h1>
+                </div>
+                   
+            </div>
+            
+       
+           
+
+        
+            <div class="flexbox-item flexbox-video-1 blur" >
+                <div class="header">
+                    <h1>Go Swipe Video</h1>
+                </div>
+                <div class="imgBox">
+                    <!-- <iframe class="videoframe" src="https://www.youtube.com/embed/F5KsoeNYp38"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe> -->
+                </div>
+                <h2 class="h2description">You can see here how the script work on your local machine if you <a  href="https://www.instagram.com/" class="download">download</a> and run it</h2>
+                <h2 class="h2message">For now the script run headless (without any visuals) :(</h2>
+            </div>
+
+
+
+
+
+            <div class="Comingsoon">
+                    <h1 class="h1ComingSoon">COMING SOON</h1>
+            </div>
+
+
+        </div>
+
+    
+
+</div>
+  
+    
+
+
+<!-- <footer>
+    <h1>OverloadCode &copy;</h1>
+</footer> -->
+
+<script src="" ></script>
+</body>
+</html>

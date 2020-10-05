@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+    margin:0;
+    padding: 0;
+   
+}
+
+
+
+
+body{
+    background: linear-gradient(270deg, #8af9b8, #a8fffb, #eebcfc);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 8s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.navbar a {   
+    font-family: inherit;
+    font-size: 25px;
+}
+
+
+
+li,a,button,input,label{
+    
+    font-weight: 500;
+    font-size:20px;
+    color:black;
+    text-decoration:none
+
+}
+
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 6%;
+}
+.siteName{
+    cursor:pointer;
+    font-family: "Montserrat",sans-serif;
+    font:bold;
+    font-size: 40px;
+    margin-right: auto;
+
+}
+ 
+
+.logo{
+    width:5%;
+    height:5%;
+    margin-right: auto;
+    margin:5px;
+  
+}
+
+.nav__links ul {
+    margin:0;
+    padding:0;
+    display: flex;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+
+
+.nav__links li{
+    display:inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    display: block;
+}
+.nav__links li a:hover {
+    color:   rgb(42, 191, 250);
+}
+
+button{
+    font-size: 25px;
+   
+    padding:9px 25px;
+    background-color: rgb(0, 255, 255);
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.aboutbutton{
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+button:hover{
+    background-color: rgb(42, 191, 250);
+}
+
+.toggle-button{
+    position: absolute;
+    top: 2.3rem;
+    right: 4rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60px;
+    height:30px;
+}
+
+.toggle-button .bar{
+    height:3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 20px;
+}
+@media (max-width:1230px){
+    .toggle-button{
+        display: flex;
+    }
+    
+    .nav__links{
+        display: none;
+        width: 100%;
+    }
+   
+    .nav__links ul{
+        width: 100%;
+         flex-direction: column;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+    .nav__links li {
+        text-align: center;
+    }
+    .aboutbutton{
+        all:unset;
+    }
+    .nav__links a{
+        padding: .5rem 1rem;
+    }
+
+    .nav__links.active{
+        display: flex;
+    }
+}
+
+
+/* FLEXBOX */
+.flexbox-item-1{
+    background-color: #fff;
+    border-radius:5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    overflow: hidden;
+    width: 500px;
+    max-width: 100%;
+    margin-bottom:100px;
+    position: relative;
+    
+}
+
+
+.blur{
+    
+   filter: blur(15px);
+   
+ }
+
+.addceva{
+    background-color:rebeccapurple;
+    
+}
+
+.header{
+    background-color:#f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 30px ;
+    
+}
+
+.header h1{
+    text-align: center;
+    margin:0;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 20px;
+    width: 100%;
+    padding:16px;
+}
+.form-control small{
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+.errorh2{
+    visibility: hidden;
+ 
+}
+
+.h2warning{
+    visibility:visible;
+    background-color: red;
+    padding: 20px 40px; 
+}
+
+
+
+
+
+
+.h2works{
+    visibility:visible;
+    background-color: lightgreen;
+    padding: 20px 40px; 
+}
+
+
+.form button{
+    margin-top:15px;
+    padding :15px;
+    width: 100%;
+    display: block;
+   
+}
+
+
+ .flexbox-container{
+    display:flex;
+    flex-wrap: wrap;
+   
+    justify-content: space-around;
+} 
+ 
+.actions{
+    margin-top: 100px;
+}
+
+
+
+/* FLEXBOX VIDEO */
+
+.flexbox-video-1{
+    background-color: #fff;
+    border-radius:5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    
+    overflow: hidden;
+    width:1000px;
+    height: 770px;
+    max-width: 100%;
+    margin-bottom:100px;
+    position: relative;
+}
+
+
+.videoframe{
+    display: block;
+    margin:auto;
+    margin-top: 20px;
+    width: 800px;
+    height: 500px;
+    box-shadow: 20px 15px 30px rgba(0,0,0,0.3);
+}
+
+.h2description{
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+}
+.h2message{
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+
+/* MAKING THE BLUR LOADING SCREEN */
+
+
+.loader{
+    border: 40px solid lightgray;
+    border-radius: 50%;
+    border-top: 40px solid blue;
+    width: 250px;
+    height: 250px;
+    -webkit-animation: spin 2s linear infinite; 
+    animation: spin 2s linear infinite; 
+   top:150px;
+   right:130px;
+   position: absolute;
+    
+   
+    
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.loaderh1{
+    top:430px;
+    right:130px;
+    position: absolute;
+    font-size: 30px;
+}
+
+
+
+/* 
+.flexbox-item{
+
+    margin:30px;
+    border:3px solid rgb(204, 255, 255);
+    background-color:rgb(230, 255, 255);
+}
+
+.flexbox-item-1{
+    height: 400px;
+    width: 700px;
+    min-width:400px;
+    min-height: 100px;
+}
+
+.flexbox-video-1{
+    height: 400px;
+    width: 700px;
+    min-width: 300px;
+    min-height: 100px;
+} */
+
