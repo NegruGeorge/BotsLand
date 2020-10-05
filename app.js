@@ -57,7 +57,7 @@ app.post("/goUnfollow",(req,res)=>{
    
     let error =-1;
 
-    
+
 
     // wwe make error:error =-1 => we display nothing
     // we have error=0 we have error 
@@ -145,9 +145,7 @@ app.get("/facebook",(req,res)=>{
 
 
 // check if application is on herok
-if(process.env.NODE_ENV ==="production"){
-    pass
-}
+
     
 
 app.get("/about",(req,res)=>{
