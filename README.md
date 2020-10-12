@@ -15,7 +15,7 @@ install the packages
 
     npm install
 
-To run it with chromium, you have to set in instagram.js every head to false 
+To run it with chromium (to see how the bot is following/liking/unfollowing live), you have to set in instagram.js every head to false 
     
 Go to every class and set:
 
