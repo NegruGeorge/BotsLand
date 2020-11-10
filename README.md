@@ -3,7 +3,7 @@ BotsLand
 
 Negru George
 
-bots for instagram
+bots for instagram    website: https://botslandnow.herokuapp.com/
 
 Usage
 -----
